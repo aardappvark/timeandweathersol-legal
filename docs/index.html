@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time and Weather Sol &mdash; Legal</title>
+<meta name="description" content="Legal policies for Time and Weather Sol, a time, weather, and Solana dashboard app for the Seeker phone.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F324;</text></svg>">
+<link rel="stylesheet" href="style.css">
+<style>
+  .logo {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .logo h1 {
+    font-size: 2em;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--sol-purple), var(--sol-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .logo p {
+    color: var(--text-muted);
+    font-size: 0.95em;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .card:hover {
+    border-color: var(--sol-purple);
+    transform: translateY(-2px);
+  }
+  .card h2 {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  .card p {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .card .tag {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .tag-required { background: rgba(153,69,255,0.15); color: var(--sol-purple); }
+  .tag-compliance { background: rgba(20,241,149,0.15); color: var(--sol-green); }
+  @media (max-width: 480px) {
+    .logo h1 { font-size: 1.6em; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <h1>Time and Weather Sol</h1>
+    <p>Legal &amp; Compliance</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="privacy.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Privacy Policy</h2>
+      <p>How Time and Weather Sol handles your data. Compliant with Australian Privacy Act, GDPR (EU/UK), CCPA (California), APPI (Japan), PIPA (Korea), and PDPA (Singapore).</p>
+    </a>
+
+    <a class="card" href="terms.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Terms of Service</h2>
+      <p>Usage terms, intellectual property, limitations of liability, and dispute resolution. Includes Australian Consumer Law protections.</p>
+    </a>
+
+    <a class="card" href="disclaimer.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Disclaimer &amp; Risk Disclosure</h2>
+      <p>Important disclosures about time display accuracy, weather data accuracy, cryptocurrency price data, financial advice limitations, and risk acknowledgements.</p>
+    </a>
+
+    <a class="card" href="sanctions.html">
+      <span class="tag tag-compliance">Compliance</span>
+      <h2>Sanctions &amp; Restricted Regions</h2>
+      <p>Compliance with OFAC, EU, UK, and Australian sanctions. Lists restricted jurisdictions and explains geographic screening.</p>
+    </a>
+
+    <a class="card" href="copyright.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Copyright Notice</h2>
+      <p>Copyright ownership, trademark attributions, data source credits, permitted use, and DMCA/copyright infringement procedures.</p>
+    </a>
+
+    <a class="card" href="license.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Licence</h2>
+      <p>Proprietary application licence terms, open source component attributions, and the full Apache Licence 2.0 text.</p>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>All policies effective 17 February 2026 &middot; Last updated 17 February 2026</p>
+    <p>Time and Weather Sol is developed in Australia &middot; <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+    <p>Package: <code>com.timeandweather.sol</code></p>
+  </div>
+</div>
+</body>
+</html>

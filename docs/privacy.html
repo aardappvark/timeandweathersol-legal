@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; Time and Weather Sol</title>
+<meta name="description" content="Time and Weather Sol privacy policy. How we handle your data — compliant with Australian Privacy Act, GDPR, CCPA, APPI, PIPA, and PDPA.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<a class="back" href="index.html">&larr; Back to Legal</a>
+
+<h1>Privacy Policy</h1>
+<span class="updated">Effective date: 17 February 2026 &middot; Last updated: 17 February 2026 &middot; Version 1.0</span>
+
+<div class="callout">
+  <strong>Summary:</strong> Time and Weather Sol stores all data locally on your device. We do not operate servers, collect personal information, or track your behaviour. The only network requests are read-only API calls to fetch publicly available weather, price, air quality, and blockchain data.
+</div>
+
+<h2>1. Data Controller</h2>
+<p>Time and Weather Sol is developed and maintained by an independent developer operating under Australian law.</p>
+<ul>
+  <li><strong>Entity:</strong> Time and Weather Sol (sole proprietor)</li>
+  <li><strong>Jurisdiction:</strong> Australia</li>
+  <li><strong>Privacy contact:</strong> <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></li>
+  <li><strong>Package name:</strong> <code>com.timeandweather.sol</code></li>
+</ul>
+<p>For the purposes of the EU General Data Protection Regulation (GDPR) and UK General Data Protection Regulation (UK GDPR), the data controller is the developer identified above. If you are located in the European Economic Area (EEA) or United Kingdom and have questions about data protection, please contact us at the email address above.</p>
+
+<h2>2. Description of Service</h2>
+<p>Time and Weather Sol is a time, weather, and Solana information dashboard application designed for the Solana Seeker phone (Android) that displays:</p>
+<ul>
+  <li>Analogue clock display</li>
+  <li>Digital time display</li>
+  <li>World clocks for multiple timezones</li>
+  <li>Current weather conditions and forecasts</li>
+  <li>Weather widgets (3 sizes) for the home screen</li>
+  <li>Screensaver mode</li>
+  <li>Live cryptocurrency price data for SOL (Solana) and SKR (Seeker) tokens</li>
+  <li>Wallet sign-in and balance display</li>
+  <li>Seeker Genesis Token (SGT) verification status</li>
+</ul>
+
+<h2>3. What Data Time and Weather Sol Collects</h2>
+<p>Time and Weather Sol is designed with a <strong>privacy-first, local-only architecture</strong>. All data remains exclusively on your device in app-private storage (Android SharedPreferences and EncryptedSharedPreferences). No data is transmitted to any server we operate, because we do not operate any servers.</p>
+
+<h3>3.1 Data stored locally on your device</h3>
+<table>
+  <tr><th>Data type</th><th>Purpose</th><th>Legal basis (GDPR)</th></tr>
+  <tr><td>Wallet public address</td><td>Display balance on dashboard (opt-in)</td><td>Consent (Art. 6(1)(a))</td></tr>
+  <tr><td>Wallet app name</td><td>Show which wallet was used to sign in</td><td>Consent (Art. 6(1)(a))</td></tr>
+  <tr><td>SGT status &amp; member number</td><td>Display Seeker Genesis Token verification</td><td>Consent (Art. 6(1)(a))</td></tr>
+  <tr><td>Weather preferences</td><td>Temperature unit, wind speed unit, display toggles, refresh intervals</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Location data (GPS coordinates)</td><td>Retrieve weather forecasts for your location</td><td>Consent (Art. 6(1)(a))</td></tr>
+  <tr><td>Engagement data</td><td>Streak counts and daily interaction counters</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Device timezone</td><td>Display local time, world clocks, sunrise/sunset times</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Clock and display preferences</td><td>Analogue/digital clock settings, world clock timezone selections</td><td>Contract (Art. 6(1)(b))</td></tr>
+</table>
+
+<h3>3.2 Location permissions (ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION)</h3>
+<p>Time and Weather Sol requests Android location permissions for <strong>two distinct purposes</strong>:</p>
+
+<h3>3.2.1 Weather data retrieval (ACCESS_FINE_LOCATION)</h3>
+<p>Time and Weather Sol uses precise GPS coordinates to fetch accurate weather forecasts, hourly and daily predictions, air quality index (AQI) data, and sunrise/sunset times for your current location. This permission:</p>
+<ul>
+  <li>Is used to send latitude and longitude coordinates to weather API services (Open-Meteo and OpenWeatherMap) to retrieve location-specific weather data</li>
+  <li>Coordinates are sent via HTTPS-encrypted API requests</li>
+  <li>Location coordinates are stored locally on your device to enable weather updates without requiring repeated GPS lookups</li>
+  <li>Can be denied &mdash; the app will not be able to provide location-based weather data without this permission</li>
+</ul>
+<p><strong>Legal basis (GDPR):</strong> Consent (Art. 6(1)(a)) &mdash; you explicitly grant location permission through the Android permission prompt, and you can revoke this permission at any time through Android Settings.</p>
+
+<h3>3.2.2 Sanctions screening (ACCESS_COARSE_LOCATION)</h3>
+<p>Time and Weather Sol also uses coarse location data for regulatory compliance &mdash; specifically to detect whether the device is located in a jurisdiction subject to international sanctions. This usage:</p>
+<ul>
+  <li>Is performed <strong>only at app startup</strong> for sanctions screening</li>
+  <li>Returns approximate location (network-based)</li>
+  <li>Is <strong>not stored</strong>, <strong>not logged</strong>, and <strong>not transmitted</strong> to any server for this purpose</li>
+  <li>Is processed entirely on-device using Android Geocoder</li>
+  <li>Can be denied &mdash; the app will fall back to SIM card and network carrier country detection</li>
+</ul>
+<p><strong>Legal basis (GDPR):</strong> Legitimate interest (Art. 6(1)(f)) &mdash; compliance with international sanctions law. We have conducted a balancing test and determined that the compelling legal obligation to screen for sanctioned regions outweighs the minimal privacy intrusion of a single on-device coarse location check that is never stored or transmitted.</p>
+
+<h3>3.3 Data we do NOT collect</h3>
+<ul>
+  <li>Names, email addresses, phone numbers, or any personally identifiable information (PII)</li>
+  <li>Private keys, seed phrases, wallet credentials, or passwords</li>
+  <li>Device identifiers, Android Advertising ID, or hardware serial numbers</li>
+  <li>Usage analytics, behavioural tracking, or session data</li>
+  <li>Cookies, browser history, or web tracking data</li>
+  <li>Biometric data</li>
+  <li>Health, financial (beyond read-only public blockchain balance), or demographic data</li>
+  <li>Contact lists, call logs, SMS, camera, or microphone data</li>
+</ul>
+
+<h2>4. No Server-Side Data Storage</h2>
+<p>Time and Weather Sol does <strong>not</strong> operate any backend servers, databases, cloud storage, or analytics infrastructure. We have no server-side systems capable of receiving, storing, or processing user data. All data exists exclusively in your device's app-private storage and is inaccessible to other applications.</p>
+
+<h2>5. Third-Party API Calls</h2>
+<p>Time and Weather Sol makes <strong>read-only</strong> API requests to the following third-party services to retrieve publicly available data. These requests are HTTPS-encrypted and no user-specific data is included in the requests except where noted:</p>
+
+<table>
+  <tr><th>Service</th><th>Endpoint</th><th>Data retrieved</th><th>User data sent</th></tr>
+  <tr><td>Open-Meteo</td><td>api.open-meteo.com</td><td>Current conditions, hourly/daily forecasts, sunrise/sunset</td><td>GPS coordinates*</td></tr>
+  <tr><td>OpenWeatherMap</td><td>api.openweathermap.org</td><td>Weather data (fallback provider)</td><td>GPS coordinates*</td></tr>
+  <tr><td>Open-Meteo Air Quality</td><td>air-quality-api.open-meteo.com</td><td>Air quality index (AQI) data</td><td>GPS coordinates*</td></tr>
+  <tr><td>Jupiter API</td><td>lite-api.jup.ag</td><td>SOL and SKR token prices</td><td>None</td></tr>
+  <tr><td>Raydium API</td><td>api-v3.raydium.io</td><td>SOL and SKR token prices (fallback)</td><td>None</td></tr>
+  <tr><td>CoinGecko API</td><td>api.coingecko.com</td><td>Prices and 24-hour change data (fallback)</td><td>None</td></tr>
+  <tr><td>Solana RPC</td><td>api.mainnet-beta.solana.com</td><td>Wallet SOL balance</td><td>Wallet public address**</td></tr>
+</table>
+
+<p>* Your GPS coordinates (latitude and longitude) are sent to weather API endpoints to retrieve location-specific weather data. This occurs only when you have granted location permission. Coordinates are numerical values that identify a geographic point but do not directly identify you as an individual. The legal basis for this processing is your explicit consent (Art. 6(1)(a) GDPR).</p>
+
+<p>** Your Solana wallet public address is sent to the Solana RPC endpoint <strong>only when you have opted in</strong> by signing in with your wallet. Wallet public addresses are publicly visible on the Solana blockchain and are not generally considered personal information, though GDPR may classify pseudonymous identifiers as personal data. The legal basis for this processing is your explicit consent (Art. 6(1)(a) GDPR).</p>
+
+<div class="callout callout-green">
+  <strong>Note on IP addresses:</strong> When Time and Weather Sol makes HTTP requests to the above APIs, your device's IP address is inherently transmitted as part of the network protocol. This is standard for all internet-connected applications. We do not control how these third-party services handle IP addresses &mdash; please refer to their respective privacy policies.
+</div>
+
+<h2>6. Mobile Wallet Adapter (MWA)</h2>
+<p>Wallet sign-in uses Solana's Mobile Wallet Adapter protocol, which operates <strong>entirely locally</strong> between Time and Weather Sol and your wallet app on the same device via Android inter-process communication. During the MWA sign-in process:</p>
+<ul>
+  <li>No data leaves your device</li>
+  <li>Your private keys remain exclusively within your wallet app</li>
+  <li>Time and Weather Sol receives only your wallet's public address and wallet name</li>
+  <li>The sign-in can be revoked at any time by disconnecting in Settings</li>
+</ul>
+
+<h2>7. Data Security</h2>
+<p>We implement the following security measures to protect locally stored data:</p>
+<ul>
+  <li><strong>Encryption at rest:</strong> Wallet-related data (public address, wallet name, SGT status) is stored using Android <code>EncryptedSharedPreferences</code> with AES-256-SIV encryption (via Google Tink)</li>
+  <li><strong>Encryption in transit:</strong> All network communications use HTTPS/TLS encryption</li>
+  <li><strong>App-private storage:</strong> All SharedPreferences files are stored in the app's private directory, inaccessible to other apps on non-rooted devices</li>
+  <li><strong>No remote attack surface:</strong> With no server infrastructure, there is no server-side data to breach</li>
+</ul>
+
+<h2>8. Data Retention and Deletion</h2>
+<p>All data is stored locally on your device and is retained until you explicitly delete it. You can delete all Time and Weather Sol data at any time by:</p>
+<ul>
+  <li><strong>Disconnecting your wallet:</strong> Settings &rarr; Wallet &rarr; Disconnect (clears wallet-related data)</li>
+  <li><strong>Clearing app data:</strong> Android Settings &rarr; Apps &rarr; Time and Weather Sol &rarr; Storage &rarr; Clear Data (clears all preferences)</li>
+  <li><strong>Uninstalling the app:</strong> Removes all Time and Weather Sol data from your device</li>
+</ul>
+<p>Since no data is stored on our servers, deletion from your device constitutes complete deletion.</p>
+
+<h2>9. International Data Transfers</h2>
+<p>Time and Weather Sol does not transfer personal data to our servers (we have none). However, when Time and Weather Sol makes API calls to third-party services (see Section 5), network requests may be routed through servers located outside your country of residence, including servers in the United States and Europe.</p>
+<p>For users in the EEA or UK: these API calls are limited to fetching publicly available weather and price data, and where you have consented, querying your location for weather forecasts and your wallet's public balance. We rely on the derogation under Article 49(1)(a) GDPR (explicit consent for location-based weather queries and wallet balance queries) and Article 49(1)(c) (necessary for the performance of the contract for weather and price data retrieval).</p>
+
+<h2>10. Your Rights</h2>
+
+<h3>10.1 European Economic Area &amp; United Kingdom (GDPR / UK GDPR)</h3>
+<p>If you are located in the EEA or UK, you have the following rights under the GDPR:</p>
+<ul>
+  <li><strong>Right of access</strong> (Art. 15) &mdash; You may request confirmation of whether we process your personal data and access to that data. Since all data is on your device, you already have full access.</li>
+  <li><strong>Right to rectification</strong> (Art. 16) &mdash; You may correct any inaccurate data by modifying your app settings.</li>
+  <li><strong>Right to erasure</strong> (Art. 17) &mdash; You may delete all data by clearing app data or uninstalling (see Section 8).</li>
+  <li><strong>Right to restriction of processing</strong> (Art. 18) &mdash; You may restrict processing by revoking permissions in Android settings.</li>
+  <li><strong>Right to data portability</strong> (Art. 20) &mdash; As all data is stored locally in standard Android SharedPreferences, it is inherently portable.</li>
+  <li><strong>Right to object</strong> (Art. 21) &mdash; You may object to processing based on legitimate interest (sanctions screening) by denying the location permission.</li>
+  <li><strong>Right to withdraw consent</strong> (Art. 7(3)) &mdash; You may withdraw wallet-related consent at any time by disconnecting your wallet, and location consent by revoking the location permission.</li>
+  <li><strong>Right to lodge a complaint</strong> &mdash; You may lodge a complaint with your local supervisory authority.</li>
+</ul>
+
+<h3>10.2 Australia (Privacy Act 1988)</h3>
+<p>Under the Australian Privacy Principles (APPs), you have the right to:</p>
+<ul>
+  <li>Access any personal information we hold about you (APP 12) &mdash; all data is on your device</li>
+  <li>Request correction of inaccurate information (APP 13)</li>
+  <li>Make a complaint to the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" rel="noopener noreferrer">oaic.gov.au</a></li>
+</ul>
+
+<h3>10.3 California, USA (CCPA / CPRA)</h3>
+<p>If you are a California resident, you have the right to:</p>
+<ul>
+  <li><strong>Right to know:</strong> What personal information is collected, used, and disclosed</li>
+  <li><strong>Right to delete:</strong> Request deletion of personal information (see Section 8)</li>
+  <li><strong>Right to opt-out of sale:</strong> <strong>We do not sell, share, or rent any personal information to any third party.</strong></li>
+  <li><strong>Right to non-discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
+  <li><strong>Right to correct:</strong> Correct inaccurate personal information via app settings</li>
+  <li><strong>Right to limit use of sensitive personal information:</strong> We do not process sensitive personal information beyond the location data described in Section 3.2</li>
+</ul>
+
+<h3>10.4 Japan (Act on Protection of Personal Information &mdash; APPI)</h3>
+<p>If you are located in Japan, you have the right to request disclosure, correction, cessation of use, and deletion of your personal information. All data is stored locally on your device and can be deleted by clearing app data or uninstalling. For inquiries, please contact us at the email address in Section 1.</p>
+
+<h3>10.5 South Korea (Personal Information Protection Act &mdash; PIPA)</h3>
+<p>If you are located in South Korea, you have the right to:</p>
+<ul>
+  <li>Access your personal information</li>
+  <li>Request correction or deletion of your personal information</li>
+  <li>Suspend processing of your personal information</li>
+  <li>Lodge a complaint with the Personal Information Protection Commission (PIPC)</li>
+</ul>
+<p>All data is stored locally on your device. The personal information protection officer for this application can be contacted at <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>.</p>
+
+<h3>10.6 Singapore (Personal Data Protection Act &mdash; PDPA)</h3>
+<p>If you are located in Singapore, you have the right to access and correct your personal data. We have designated the developer as the Data Protection Officer. For PDPA inquiries, contact <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>.</p>
+
+<h2>11. Children's Privacy</h2>
+<p>Time and Weather Sol is not directed at, marketed to, or intended for use by children under the age of 16 (or 13 in jurisdictions where that threshold applies, including the United States under COPPA). We do not knowingly collect any information from children. If you believe a child has provided data to the app, the data exists only on that child's device and can be removed by clearing app data or uninstalling the app.</p>
+
+<h2>12. Automated Decision-Making</h2>
+<p>Time and Weather Sol performs one automated decision: <strong>sanctions region screening</strong> at app startup. If your device is detected in a sanctioned jurisdiction, the app displays an informational screen explaining the restriction. This automated decision is based on legitimate interest in regulatory compliance (GDPR Art. 22(2)(b)) and does not produce legal effects beyond restricting access to the app's informational features. You may contact us to contest this decision.</p>
+
+<h2>13. Data Protection Impact Assessment</h2>
+<p>We have conducted an internal assessment of our data processing activities and determined that a formal Data Protection Impact Assessment (DPIA) under GDPR Art. 35 is not required because:</p>
+<ul>
+  <li>We do not engage in large-scale processing of personal data</li>
+  <li>We do not systematically monitor public areas</li>
+  <li>We do not process special categories of data</li>
+  <li>Location data is used solely for weather retrieval and on-device sanctions screening and is not transmitted to our own servers</li>
+</ul>
+
+<h2>14. Do Not Track</h2>
+<p>Time and Weather Sol does not track users in any way and therefore inherently honours Do Not Track (DNT) signals. There is no tracking to disable.</p>
+
+<h2>15. Local Storage Disclosure (ePrivacy)</h2>
+<p>For the purposes of the EU ePrivacy Directive (2002/58/EC) and its national implementations: Time and Weather Sol stores configuration data on your device using Android SharedPreferences and EncryptedSharedPreferences. This storage is <strong>strictly necessary</strong> for the functioning of the application (exempted from consent requirements under Art. 5(3)) and does not involve any tracking, profiling, or advertising functionality.</p>
+
+<h2>16. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
+<ul>
+  <li>Update the "Last updated" date at the top of this page</li>
+  <li>Update the version number</li>
+  <li>Make the new version available within the app and at this URL</li>
+</ul>
+<p>Continued use of Time and Weather Sol after changes take effect constitutes acceptance of the updated policy. We encourage you to review this policy periodically.</p>
+
+<h2>17. Contact</h2>
+<p>For any privacy-related questions, concerns, or to exercise your data subject rights, please contact:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></li>
+  <li><strong>Subject line:</strong> "Privacy Inquiry &mdash; Time and Weather Sol"</li>
+</ul>
+<p>We aim to respond to all privacy inquiries within 30 days.</p>
+
+<h2>18. Governing Law</h2>
+<p>This Privacy Policy is governed by the laws of Australia, without regard to conflict of law principles. This does not affect your statutory rights under the laws of your country of residence, including rights under GDPR (for EEA/UK residents), CCPA/CPRA (for California residents), or other applicable local privacy laws.</p>
+
+<div class="footer">
+  <p><a href="index.html">&larr; Back to Legal</a></p>
+  <p>&copy; 2026 Time and Weather Sol. All rights reserved.</p>
+  <p><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a> &middot; <a href="sanctions.html">Sanctions</a> &middot; <a href="copyright.html">Copyright</a> &middot; <a href="license.html">Licence</a></p>
+  <p><a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+</div>
+</div>
+</body>
+</html>

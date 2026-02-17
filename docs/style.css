@@ -1,0 +1,131 @@
+:root {
+  --sol-purple: #9945FF;
+  --sol-green: #14F195;
+  --bg: #0a0a0f;
+  --card-bg: #12121a;
+  --text: #d0d0d8;
+  --text-muted: #6b6b7b;
+  --border: #1e1e2e;
+  --heading: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+.back {
+  display: inline-block;
+  color: var(--sol-green);
+  text-decoration: none;
+  font-size: 0.88em;
+  margin-bottom: 32px;
+}
+.back:hover { text-decoration: underline; }
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+.updated {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin-bottom: 36px;
+  display: block;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--sol-green);
+  margin-top: 36px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-size: 1.02em;
+  font-weight: 600;
+  color: var(--sol-purple);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+p {
+  margin-bottom: 14px;
+}
+ul, ol {
+  margin-bottom: 14px;
+  padding-left: 24px;
+}
+li {
+  margin-bottom: 6px;
+}
+strong {
+  color: #e0e0ea;
+}
+a {
+  color: var(--sol-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 0.92em;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+th {
+  color: var(--sol-purple);
+  font-weight: 600;
+  font-size: 0.88em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+code {
+  background: rgba(153,69,255,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--sol-purple);
+}
+.callout {
+  background: var(--card-bg);
+  border-left: 3px solid var(--sol-purple);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+  font-size: 0.92em;
+}
+.callout-green {
+  border-left-color: var(--sol-green);
+}
+.footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.82em;
+  line-height: 1.8;
+}
+.footer a { color: var(--sol-green); }
+@media (max-width: 480px) {
+  .container { padding: 24px 16px 60px; }
+  h1 { font-size: 1.5em; }
+  table { font-size: 0.84em; }
+  th, td { padding: 8px; }
+}
